@@ -1,0 +1,11 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - >
+        curl -XPOST 'https://api.opsgenie.com/v1/json/alert' -d '
+        {
+          "apiKey": "506cca5c-9bad-43fc-8aef-4af21cc19674",
+          "message" : "Alert triggered"
+        }'
