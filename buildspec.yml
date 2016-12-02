@@ -9,3 +9,7 @@ phases:
           "apiKey": "506cca5c-9bad-43fc-8aef-4af21cc19674",
           "message" : "Alert triggered"
         }'
+      - echo "this is a test" > test.txt
+artifacts:
+  files:
+    - test.txt
